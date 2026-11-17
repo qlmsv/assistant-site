@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Личный AI-помощник</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-snap-type:y mandatory;scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f1020;color:#eef}
+section{min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;padding:8vh 10vw}
+section:nth-child(even){background:#16182e}
+h1{font-size:clamp(2.4rem,6vw,4.5rem);background:linear-gradient(90deg,#7aa2ff,#c38bff);-webkit-background-clip:text;color:transparent;margin-bottom:1rem}
+h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1.5rem;color:#9fb6ff}
+p.lead{font-size:1.4rem;opacity:.85;max-width:40rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1.4rem}
+.card b{display:block;font-size:1.15rem;margin-bottom:.4rem}
+.card span{opacity:.8;line-height:1.5}
+.emoji{font-size:2rem;margin-bottom:.6rem}
+nav{position:fixed;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px}
+nav a{width:10px;height:10px;border-radius:50%;background:#556;display:block}
+nav a:hover{background:#9fb6ff}
+footer{opacity:.5;margin-top:2rem}
+</style>
+</head>
+<body>
+<nav><a href="#s1"></a><a href="#s2"></a><a href="#s3"></a><a href="#s4"></a><a href="#s5"></a><a href="#s6"></a></nav>
+
+<section id="s1">
+<h1>Личный AI-помощник</h1>
+<p class="lead">Ведёт дела, помнит важное и работает с вашими сервисами. Коротко, по делу, по-русски.</p>
+</section>
+
+<section id="s2">
+<h2>📋 Дела под контролем</h2>
+<div class="grid">
+<div class="card"><div class="emoji">✅</div><b>Задачи</b><span>Со сроками и до трёх главных дел в день.</span></div>
+<div class="card"><div class="emoji">⏰</div><b>Напоминания</b><span>«Напомни завтра в 9» — и всё, записано.</span></div>
+<div class="card"><div class="emoji">📝</div><b>Заметки и идеи</b><span>Мысль пришла — сразу сохранена.</span></div>
+</div>
+</section>
+
+<section id="s3">
+<h2>🧠 Память</h2>
+<div class="grid">
+<div class="card"><div class="emoji">🎂</div><b>Важные факты</b><span>Дни рождения близких, предпочтения, цели.</span></div>
+<div class="card"><div class="emoji">🔍</div><b>Поиск по прошлому</b><span>«Что я решил про…» — найду в истории.</span></div>
+</div>
+</section>
+
+<section id="s4">
+<h2>📣 Соцсети через Metricool</h2>
+<div class="grid">
+<div class="card"><div class="emoji">🗓</div><b>Планирование постов</b><span>Instagram, TikTok, YouTube, LinkedIn и другие.</span></div>
+<div class="card"><div class="emoji">📊</div><b>Аналитика</b><span>Статистика и лучшее время для публикаций.</span></div>
+<div class="card"><div class="emoji">👀</div><b>Согласование</b><span>Отправка постов на ревью перед публикацией.</span></div>
+</div>
+</section>
+
+<section id="s5">
+<h2>🔌 Интеграции через Composio</h2>
+<div class="grid">
+<div class="card"><div class="emoji">💻</div><b>GitHub</b><span>Например, этот сайт создан и опубликован помощником.</span></div>
+<div class="card"><div class="emoji">📁</div><b>Google Workspace</b><span>Docs, Sheets, Drive, Calendar, Gmail.</span></div>
+<div class="card"><div class="emoji">🌐</div><b>И сотни других</b><span>Supabase, Render, YouTube, Trello…</span></div>
+</div>
+</section>
+
+<section id="s6">
+<h2>🚀 Что дальше</h2>
+<div class="grid">
+<div class="card"><div class="emoji">✈️</div><b>Telegram</b><span>Сводки чатов и ответы с подтверждением.</span></div>
+<div class="card"><div class="emoji">📱</div><b>Mini App</b><span>Панель задач и заметок прямо в Telegram.</span></div>
+</div>
+<footer>Сделано AI-помощником · 2026</footer>
+</section>
+</body>
+</html>
